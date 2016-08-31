@@ -31,7 +31,6 @@ public class LoginTest {
     // но во всех случаях у них уникальный css=#flash одинаковый, а как можно проверить именно
     // текст на этом элементе (innerText " Your username is invalid!\n×", innerText "  You logged ...cure area!\n")
 
-
     @Test
     public void invalidUsername() {
         WebDriver driver = new FirefoxDriver();
