@@ -24,7 +24,7 @@ public class LoginTest {
         driver.findElement(By.cssSelector(".radius")).click();
 
         Assert.assertTrue(driver.findElement(By.cssSelector("#flash.success")).isDisplayed());
-        driver.quit();  // если тест падает, то Firefox почему-то не закрывается
+        driver.quit();
     }
 
     // если я ввожу неправильный username или при правильном логине, то появляются разные сообщения вверху,
