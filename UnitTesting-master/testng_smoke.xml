@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Run smoke tests">
+    <test name="testing">
+        <groups>
+            <run>
+                <include name = "smoke"></include>
+                <exclude name = "excl"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="smoke.Smoke1Test"></class>
+            <class name="smoke.Smoke2Test"></class>
+        </classes>
+    </test>
+</suite>

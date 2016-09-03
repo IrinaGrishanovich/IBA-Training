@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Run parser tests">
+    <test name="testing">
+        <groups>
+            <run>
+                <include name="parser"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="parser.ParserStrTest"></class>
+            <class name="parser.ParserGroupTest"></class>
+        </classes>
+    </test>
+</suite>
