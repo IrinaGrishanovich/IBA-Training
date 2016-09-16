@@ -1,0 +1,8 @@
+E-1 Verify that contact us form sends successfully
+
+1. Перейдите на страницу Contact Us.
+2. Заполните все необходимые поля (прикрепите txt файл).
+3. Нажмите кнопку Send.
+4. Убедитесь, что сообщение об успешной отправке отображается.
+
+"src/main/resources/myFile.txt"
