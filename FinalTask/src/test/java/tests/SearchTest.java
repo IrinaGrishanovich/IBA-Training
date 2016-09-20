@@ -13,8 +13,9 @@ import ru.yandex.qatools.allure.annotations.TestCaseId;
 public class SearchTest extends TestBase {
 
     private static final String SEARCH_ITEM = "Blouse";
+    private static final String CATALOG_SEARCH_ITEM = "T-shirts";
 
-    @TestCaseId("E-3")
+    @TestCaseId("E-4")
     @Test
     public void search() {
         HomePage homePage = new HomePage(driver);
@@ -22,4 +23,15 @@ public class SearchTest extends TestBase {
 
         Assert.assertTrue(searchPage.isSearchResultDisplayed(SEARCH_ITEM), "The search result didn't display");
     }
+
+    @TestCaseId("E-6")
+    @Test
+    public void catalogSearch() {
+        HomePage homePage = new HomePage(driver);
+        SearchPage searchPage = homePage.chooseWomenTshirts();
+
+        Assert.assertTrue(searchPage.isSearchResultDisplayed(CATALOG_SEARCH_ITEM), "The search result didn't display");
+
+    }
 }
+

@@ -14,7 +14,7 @@ public class CartTest extends TestBase {
 
     private static final String ITEM_FOR_ADDING = "Casual Dresses";
 
-    @TestCaseId("E-4")
+    @TestCaseId("E-5")
     @Test
     public void addAndDeleteItemsFromCart() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
@@ -24,10 +24,9 @@ public class CartTest extends TestBase {
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(searchPage.isItemInCartDisplayed(), "The item in cart didn't displayed");
-
         searchPage.deleteItemFromCart();
-        softAssert.assertTrue(searchPage.isEmptyCartDisplayed(), "The cart is full!");
 
+        softAssert.assertTrue(searchPage.isEmptyCartDisplayed(), "The cart is full!");
         softAssert.assertAll();
 
     }

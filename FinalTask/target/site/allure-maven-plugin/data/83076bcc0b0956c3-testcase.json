@@ -1,0 +1,54 @@
+{
+  "uid" : "83076bcc0b0956c3",
+  "name" : "sendEmptyMassage",
+  "title" : "Send empty massage",
+  "time" : {
+    "start" : 1474384531822,
+    "stop" : 1474384535437,
+    "duration" : 3615
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "E-2",
+    "url" : "E-2"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Screenshot",
+    "source" : "66eb56c4-fabe-452d-9ed6-1b150713be8d-attachment",
+    "type" : "image/pmg",
+    "size" : 153474,
+    "uid" : "ace57ab7fa7afafe"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "testId",
+    "value" : "E-2"
+  }, {
+    "name" : "story",
+    "value" : "Verify the visibility of message heading on ContactUsPage"
+  }, {
+    "name" : "feature",
+    "value" : "ContactUsForm"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Irina.local"
+  }, {
+    "name" : "thread",
+    "value" : "9027@MacBook-Pro-Irina.local.main"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

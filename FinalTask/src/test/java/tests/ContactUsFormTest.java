@@ -31,7 +31,6 @@ public class ContactUsFormTest extends TestBase {
         Assert.assertTrue(contactUsPage.isSuccessfullyMessageHeadingDisplayed(), "Successfully message heading of contactUsPage didn't appear");
     }
 
-
     @TestCaseId("E-2")
     @Features("ContactUsForm")
     @Stories("Verify the visibility of message heading on ContactUsPage")

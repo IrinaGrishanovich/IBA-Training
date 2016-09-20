@@ -1,42 +1,34 @@
 package helper;
 
 import org.apache.commons.lang3.RandomStringUtils;
-
 import java.util.Random;
 
 public class RandomData {
 
     public static String getRandomEmail() {
-        int lenght = 15;
-        String randomEmail = "mail" + RandomStringUtils.randomNumeric(lenght) + "@gmail.com";
-        return randomEmail;
+        return "something" + RandomStringUtils.randomNumeric(15) + "@gmail.com";
     }
 
     public static String getRandomText() {
-        String randomText = RandomStringUtils.randomAlphabetic(14);
-        return randomText;
+        return RandomStringUtils.randomAlphabetic(14);
     }
 
     public static String getRandomNumber() {
-//        param count the length of random string to create param letters if <code>true</code>,
-//        generated string will include alphabetic characters
-//        param numbers if <code>true</code>, generated string will include numeric characters
-//        return the random string
-        String randomNumber = RandomStringUtils.random(5, false, true);
-        return randomNumber;
+        return RandomStringUtils.random(5, false, true);
     }
 
-    public static String getRandonDayOfBirth() {
-        int randonDayOfBirth = new Random().nextInt(27) + 1;
-        return Integer.toString(randonDayOfBirth);
+    public static String getRandomDayOfBirth() {
+        int randomDayOfBirth = new Random().nextInt(27) + 1;
+        return Integer.toString(randomDayOfBirth);
     }
 
-    public static String getRandonMonthOfBirth() {
-        Random random = new Random();
-        String MonthOfBirth[] = {"January", "February", "March", "April", "May", "June", "July", "August",
-                "September", "October", "November", "December"};
-        int pos = random.nextInt(MonthOfBirth.length);
-        return MonthOfBirth[pos];
+    private enum MonthOfBirth { JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST,
+                                SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER }
+
+    public static String getRandomMonthOfBirth() {
+        MonthOfBirth[] values = MonthOfBirth.values();
+        int randomMonthOfBirth = new Random().nextInt(12);
+        return values[randomMonthOfBirth].toString();
     }
 
     public static String getRandomYearOfBirth() {
@@ -46,9 +38,7 @@ public class RandomData {
 
     public static int getRandomSearchItem(int allSearchItems){
         Random random = new Random();
-        int randomValue = random.nextInt(allSearchItems);
-
-        return randomValue;   //new Random().nextInt(allSearchItems);
+        return random.nextInt(allSearchItems);
     }
 }
 

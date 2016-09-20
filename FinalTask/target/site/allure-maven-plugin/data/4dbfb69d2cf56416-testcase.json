@@ -1,0 +1,54 @@
+{
+  "uid" : "4dbfb69d2cf56416",
+  "name" : "sendMessage",
+  "title" : "Send message",
+  "time" : {
+    "start" : 1474384541362,
+    "stop" : 1474384545132,
+    "duration" : 3770
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "E-1",
+    "url" : "E-1"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Screenshot",
+    "source" : "cf649a5e-0a59-4c82-a15f-5cd9bbefd2e2-attachment",
+    "type" : "image/pmg",
+    "size" : 128767,
+    "uid" : "9e09095f3be7c10f"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "testId",
+    "value" : "E-1"
+  }, {
+    "name" : "story",
+    "value" : "Verify the visibility of message heading on ContactUsPage"
+  }, {
+    "name" : "feature",
+    "value" : "ContactUsForm"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Irina.local"
+  }, {
+    "name" : "thread",
+    "value" : "9027@MacBook-Pro-Irina.local.main"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

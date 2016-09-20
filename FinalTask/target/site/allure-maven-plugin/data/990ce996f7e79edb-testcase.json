@@ -1,0 +1,54 @@
+{
+  "uid" : "990ce996f7e79edb",
+  "name" : "catalogSearch",
+  "title" : "Catalog search",
+  "time" : {
+    "start" : 1474384563771,
+    "stop" : 1474384566694,
+    "duration" : 2923
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "E-6",
+    "url" : "E-6"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Screenshot",
+    "source" : "47ca3e21-6a3b-41a6-abfc-003f27adb27f-attachment",
+    "type" : "image/pmg",
+    "size" : 594008,
+    "uid" : "497667cf62efb275"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "testId",
+    "value" : "E-6"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Irina.local"
+  }, {
+    "name" : "thread",
+    "value" : "9027@MacBook-Pro-Irina.local.main"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "feature",
+    "value" : "Without feature"
+  }, {
+    "name" : "story",
+    "value" : "Without story"
+  } ],
+  "parameters" : [ ]
+}

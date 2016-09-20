@@ -2,12 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import static helper.Locators.get;
 
-
 public class AccountCreationPage {
-
 
     private final WebDriver driver;
     private static final By GENDER_RADIO_BUTTON = get("AccountCreationPage.GenderRadioButton");

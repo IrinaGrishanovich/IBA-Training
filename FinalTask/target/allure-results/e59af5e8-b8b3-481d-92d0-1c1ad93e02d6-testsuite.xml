@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1474384508660" stop="1474384575591" version="1.4.6">
+    <name>Surefire suite</name>
+    <title>Surefire suite : Surefire test[]</title>
+    <test-cases>
+        <test-case start="1474384517167" stop="1474384525105" status="passed">
+            <name>addAndDeleteItemsFromCart</name>
+            <steps/>
+            <attachments>
+                <attachment title="Screenshot" source="7437e225-3f83-462b-9d44-cc663fcc07f5-attachment" type="image/pmg" size="584111"/>
+            </attachments>
+            <labels>
+                <label name="testId" value="E-5"/>
+                <label name="host" value="MacBook-Pro-Irina.local"/>
+                <label name="thread" value="9027@MacBook-Pro-Irina.local.main"/>
+            </labels>
+        </test-case>
+        <test-case start="1474384531822" stop="1474384535437" status="passed">
+            <name>sendEmptyMassage</name>
+            <steps/>
+            <attachments>
+                <attachment title="Screenshot" source="66eb56c4-fabe-452d-9ed6-1b150713be8d-attachment" type="image/pmg" size="153474"/>
+            </attachments>
+            <labels>
+                <label name="testId" value="E-2"/>
+                <label name="story" value="Verify the visibility of message heading on ContactUsPage"/>
+                <label name="feature" value="ContactUsForm"/>
+                <label name="host" value="MacBook-Pro-Irina.local"/>
+                <label name="thread" value="9027@MacBook-Pro-Irina.local.main"/>
+            </labels>
+        </test-case>
+        <test-case start="1474384541362" stop="1474384545132" status="passed">
+            <name>sendMessage</name>
+            <steps/>
+            <attachments>
+                <attachment title="Screenshot" source="cf649a5e-0a59-4c82-a15f-5cd9bbefd2e2-attachment" type="image/pmg" size="128767"/>
+            </attachments>
+            <labels>
+                <label name="testId" value="E-1"/>
+                <label name="story" value="Verify the visibility of message heading on ContactUsPage"/>
+                <label name="feature" value="ContactUsForm"/>
+                <label name="host" value="MacBook-Pro-Irina.local"/>
+                <label name="thread" value="9027@MacBook-Pro-Irina.local.main"/>
+            </labels>
+        </test-case>
+        <test-case start="1474384551260" stop="1474384557890" status="passed">
+            <name>register</name>
+            <steps/>
+            <attachments>
+                <attachment title="Screenshot" source="6cbcea93-1d61-4fff-bc09-dc63a5ff60bb-attachment" type="image/pmg" size="158553"/>
+            </attachments>
+            <labels>
+                <label name="testId" value="E-3"/>
+                <label name="host" value="MacBook-Pro-Irina.local"/>
+                <label name="thread" value="9027@MacBook-Pro-Irina.local.main"/>
+            </labels>
+        </test-case>
+        <test-case start="1474384563771" stop="1474384566694" status="passed">
+            <name>catalogSearch</name>
+            <steps/>
+            <attachments>
+                <attachment title="Screenshot" source="47ca3e21-6a3b-41a6-abfc-003f27adb27f-attachment" type="image/pmg" size="594008"/>
+            </attachments>
+            <labels>
+                <label name="testId" value="E-6"/>
+                <label name="host" value="MacBook-Pro-Irina.local"/>
+                <label name="thread" value="9027@MacBook-Pro-Irina.local.main"/>
+            </labels>
+        </test-case>
+        <test-case start="1474384572757" stop="1474384575411" status="passed">
+            <name>search</name>
+            <steps/>
+            <attachments>
+                <attachment title="Screenshot" source="23910a46-1963-416c-a12e-657b015d079b-attachment" type="image/pmg" size="435291"/>
+            </attachments>
+            <labels>
+                <label name="testId" value="E-4"/>
+                <label name="host" value="MacBook-Pro-Irina.local"/>
+                <label name="thread" value="9027@MacBook-Pro-Irina.local.main"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

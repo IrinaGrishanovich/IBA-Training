@@ -2,16 +2,17 @@ package pages;
 
 
 import helper.RandomData;
+import helper.Waiter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
 import static helper.Locators.get;
-
 
 public class SearchPage {
 
@@ -25,14 +26,14 @@ public class SearchPage {
     private static final By SHOPPING_CART_LINK = get("SearchPage.ShoppingCartLink");
     private static final By CART_BLOCK_REMOVE_LINK = get("SearchPage.CartBlockRemoveLink");
     private static final By EMPTY_CART_LINK = get("SearchPage.EmptyCartLink");
-    public String titleRandomItem;
+    private static final By CART_PRICES_LAST_LINE = get("SearchPage.CartPricesLastLine");
+    private static final String ATTRIBUTE_TITLE = "title";
+    private static final String TEXT = "(empty)";
+    private static String titleRandomItem;
 
     public SearchPage(WebDriver driver) {
         this.driver = driver;
     }
-//
-//    public boolean verifySearchResult(String item) {
-//        return driver.findElement(PRODUCT_NAME_TITLE).getAttribute("title").contains(item);
 
     public boolean isSearchResultDisplayed(String item) {
         WebElement searchResult;
@@ -41,19 +42,23 @@ public class SearchPage {
         } catch (NoSuchElementException ex) {
             return false;
         }
-        return searchResult.getAttribute("title").contains(item);
+        return searchResult.getAttribute(ATTRIBUTE_TITLE).contains(item);
     }
 
     public void addRandomItem() {
         List<WebElement> listSearchItem = driver.findElements(PRODUCT_CONTAINER);
         int allSearchItems = listSearchItem.size();
+
         int numberRandomItem = RandomData.getRandomSearchItem(allSearchItems);
         WebElement randomItem = listSearchItem.get(numberRandomItem);
-        titleRandomItem = randomItem.getAttribute("title");
+        WebElement productNameElement = randomItem.findElement(PRODUCT_NAME_TITLE);
+
+        titleRandomItem = productNameElement.getAttribute(ATTRIBUTE_TITLE);
 
         Actions builder = new Actions(driver);
-        builder.moveToElement(randomItem).perform();
-        driver.findElement(ADD_BUTTON).click();
+        builder.moveToElement(randomItem).build().perform();
+
+        driver.findElements(ADD_BUTTON).get(numberRandomItem).click();
     }
 
     public void closeWindow() {
@@ -71,7 +76,7 @@ public class SearchPage {
         } catch (NoSuchElementException ex) {
             return false;
         }
-        return searchResult.getAttribute("title").contains(titleRandomItem);
+        return searchResult.getAttribute(ATTRIBUTE_TITLE).contains(titleRandomItem);
     }
 
     public void deleteItemFromCart() {
@@ -79,13 +84,10 @@ public class SearchPage {
         Actions actions = new Actions(driver);
         actions.moveToElement(shoppingCart).build().perform();
         driver.findElement(CART_BLOCK_REMOVE_LINK).click();
-
     }
 
-    public boolean isEmptyCartDisplayed() {
-        WebElement shoppingCart = driver.findElement(SHOPPING_CART_LINK);
-        Actions actions = new Actions(driver);
-        actions.moveToElement(shoppingCart).build().perform();
+    public boolean isEmptyCartDisplayed() throws InterruptedException {
+        Waiter.getWaiter(driver).until(ExpectedConditions.invisibilityOfElementLocated(CART_PRICES_LAST_LINE));
 
         WebElement emptyCart;
         try {
@@ -93,9 +95,7 @@ public class SearchPage {
         } catch (NoSuchElementException ex) {
             return false;
         }
-        return emptyCart.isDisplayed();
+        return emptyCart.getText().contains(TEXT);
     }
-
-
 }
 

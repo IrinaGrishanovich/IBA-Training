@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="66923" started-at="2016-09-20T15:15:08Z" finished-at="2016-09-20T15:16:15Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="66923" started-at="2016-09-20T15:15:08Z" finished-at="2016-09-20T15:16:15Z">
+      <class name="tests.ContactUsFormTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ContactUsFormTest@1416a80a]" name="setup" is-config="true" duration-ms="6465" started-at="2016-09-20T18:15:25Z" finished-at="2016-09-20T18:15:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="sendEmptyMassage()[pri:0, instance:tests.ContactUsFormTest@1416a80a]" name="sendEmptyMassage" duration-ms="3124" started-at="2016-09-20T18:15:31Z" finished-at="2016-09-20T18:15:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmptyMassage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ContactUsFormTest@1416a80a]" name="tearDown" is-config="true" duration-ms="164" started-at="2016-09-20T18:15:35Z" finished-at="2016-09-20T18:15:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ContactUsFormTest@1416a80a]" name="setup" is-config="true" duration-ms="5757" started-at="2016-09-20T18:15:35Z" finished-at="2016-09-20T18:15:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="sendMessage()[pri:0, instance:tests.ContactUsFormTest@1416a80a]" name="sendMessage" duration-ms="3401" started-at="2016-09-20T18:15:41Z" finished-at="2016-09-20T18:15:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMessage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ContactUsFormTest@1416a80a]" name="tearDown" is-config="true" duration-ms="151" started-at="2016-09-20T18:15:45Z" finished-at="2016-09-20T18:15:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ContactUsFormTest -->
+      <class name="tests.CartTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.CartTest@2954b5ea]" name="setup" is-config="true" duration-ms="8196" started-at="2016-09-20T18:15:08Z" finished-at="2016-09-20T18:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addAndDeleteItemsFromCart()[pri:0, instance:tests.CartTest@2954b5ea]" name="addAndDeleteItemsFromCart" duration-ms="6610" started-at="2016-09-20T18:15:16Z" finished-at="2016-09-20T18:15:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAndDeleteItemsFromCart -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.CartTest@2954b5ea]" name="tearDown" is-config="true" duration-ms="241" started-at="2016-09-20T18:15:25Z" finished-at="2016-09-20T18:15:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.RegisterTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.RegisterTest@65753040]" name="setup" is-config="true" duration-ms="5969" started-at="2016-09-20T18:15:45Z" finished-at="2016-09-20T18:15:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="register()[pri:0, instance:tests.RegisterTest@65753040]" name="register" duration-ms="6204" started-at="2016-09-20T18:15:51Z" finished-at="2016-09-20T18:15:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.RegisterTest@65753040]" name="tearDown" is-config="true" duration-ms="159" started-at="2016-09-20T18:15:57Z" finished-at="2016-09-20T18:15:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegisterTest -->
+      <class name="tests.SearchTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SearchTest@5fbdc49b]" name="setup" is-config="true" duration-ms="5719" started-at="2016-09-20T18:15:58Z" finished-at="2016-09-20T18:16:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="catalogSearch()[pri:0, instance:tests.SearchTest@5fbdc49b]" name="catalogSearch" duration-ms="1931" started-at="2016-09-20T18:16:03Z" finished-at="2016-09-20T18:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catalogSearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SearchTest@5fbdc49b]" name="tearDown" is-config="true" duration-ms="180" started-at="2016-09-20T18:16:06Z" finished-at="2016-09-20T18:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SearchTest@5fbdc49b]" name="setup" is-config="true" duration-ms="5878" started-at="2016-09-20T18:16:06Z" finished-at="2016-09-20T18:16:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="search()[pri:0, instance:tests.SearchTest@5fbdc49b]" name="search" duration-ms="1751" started-at="2016-09-20T18:16:12Z" finished-at="2016-09-20T18:16:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SearchTest@5fbdc49b]" name="tearDown" is-config="true" duration-ms="152" started-at="2016-09-20T18:16:15Z" finished-at="2016-09-20T18:16:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

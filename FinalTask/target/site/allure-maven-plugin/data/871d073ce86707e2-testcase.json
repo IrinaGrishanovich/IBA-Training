@@ -1,0 +1,54 @@
+{
+  "uid" : "871d073ce86707e2",
+  "name" : "addAndDeleteItemsFromCart",
+  "title" : "Add and delete items from cart",
+  "time" : {
+    "start" : 1474384517167,
+    "stop" : 1474384525105,
+    "duration" : 7938
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "E-5",
+    "url" : "E-5"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Screenshot",
+    "source" : "7437e225-3f83-462b-9d44-cc663fcc07f5-attachment",
+    "type" : "image/pmg",
+    "size" : 584111,
+    "uid" : "29c6d64129652b19"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "testId",
+    "value" : "E-5"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Irina.local"
+  }, {
+    "name" : "thread",
+    "value" : "9027@MacBook-Pro-Irina.local.main"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "feature",
+    "value" : "Without feature"
+  }, {
+    "name" : "story",
+    "value" : "Without story"
+  } ],
+  "parameters" : [ ]
+}

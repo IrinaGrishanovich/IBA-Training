@@ -1,0 +1,75 @@
+{
+  "hosts" : [ {
+    "title" : "MacBook-Pro-Irina.local",
+    "threads" : [ {
+      "title" : "9027@MacBook-Pro-Irina.local.main",
+      "testCases" : [ {
+        "uid" : "871d073ce86707e2",
+        "name" : "addAndDeleteItemsFromCart",
+        "title" : "Add and delete items from cart",
+        "time" : {
+          "start" : 1474384517167,
+          "stop" : 1474384525105,
+          "duration" : 7938
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "83076bcc0b0956c3",
+        "name" : "sendEmptyMassage",
+        "title" : "Send empty massage",
+        "time" : {
+          "start" : 1474384531822,
+          "stop" : 1474384535437,
+          "duration" : 3615
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "4dbfb69d2cf56416",
+        "name" : "sendMessage",
+        "title" : "Send message",
+        "time" : {
+          "start" : 1474384541362,
+          "stop" : 1474384545132,
+          "duration" : 3770
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d8e0982a67e07d1d",
+        "name" : "register",
+        "title" : "Register",
+        "time" : {
+          "start" : 1474384551260,
+          "stop" : 1474384557890,
+          "duration" : 6630
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "990ce996f7e79edb",
+        "name" : "catalogSearch",
+        "title" : "Catalog search",
+        "time" : {
+          "start" : 1474384563771,
+          "stop" : 1474384566694,
+          "duration" : 2923
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "86c39364e5a2e408",
+        "name" : "search",
+        "title" : "Search",
+        "time" : {
+          "start" : 1474384572757,
+          "stop" : 1474384575411,
+          "duration" : 2654
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

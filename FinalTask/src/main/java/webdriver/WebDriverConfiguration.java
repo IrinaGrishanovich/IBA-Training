@@ -20,7 +20,6 @@ public class WebDriverConfiguration {
                 driver = new FirefoxDriver();
                 break;
         }
-
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;

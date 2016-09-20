@@ -7,24 +7,22 @@ import org.openqa.selenium.WebElement;
 
 import static helper.Locators.get;
 
-
 public class MyAccountPage {
 
-    private static final By MY_ACCOUNT_HEADING = get("MyAccountPage.MyAccountHeading");
+    private static final By MY_INFO_ACCOUNT = get("MyAccountPage.InfoAccount");
     private final WebDriver driver;
 
     public MyAccountPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public boolean isMyAccountHeadingDisplayed() {
-        WebElement myAccountHeading = null;
+    public boolean isMyInfoAccountDisplayed() {
+        WebElement myInfoAccount;
         try {
-            myAccountHeading = driver.findElement(MY_ACCOUNT_HEADING);
+            myInfoAccount = driver.findElement(MY_INFO_ACCOUNT);
         } catch (NoSuchElementException ex) {
             return false;
         }
-        return myAccountHeading.isDisplayed();
+        return myInfoAccount.isDisplayed();
     }
-
 }

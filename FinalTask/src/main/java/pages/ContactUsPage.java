@@ -5,12 +5,12 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
 import static helper.Locators.get;
 
 public class ContactUsPage {
 
     private final WebDriver driver;
+    private static final String VALUE = "2";
     private static final String MY_FILE = "src/main/resources/myFile.txt";
     private static final By SUBJECT_HEADING_DROPDOWN = get("ContactUsPage.SubjectHeadingDropdown");
     private static final By EMAIL_ADDRESS_INPUT = get("ContactUsPage.EmailAddress");
@@ -28,7 +28,7 @@ public class ContactUsPage {
 
         WebElement optionsSelect = driver.findElement(SUBJECT_HEADING_DROPDOWN);
         Select select = new Select(optionsSelect);
-        select.selectByValue("2");
+        select.selectByValue(VALUE);
         driver.findElement(EMAIL_ADDRESS_INPUT).sendKeys(email);
         driver.findElement(ATTACH_FILE_BUTTON).sendKeys(MY_FILE);
         driver.findElement(MESSAGE_TEXT_AREA).sendKeys(textMassage);
@@ -37,7 +37,7 @@ public class ContactUsPage {
     }
 
     public boolean isSuccessfullyMessageHeadingDisplayed() {
-        WebElement successfullyHeading = null;
+        WebElement successfullyHeading;
         try {
             successfullyHeading = driver.findElement(SUCCESSFULLY_MESSAGE_HEADING);
         } catch (NoSuchElementException ex) {
@@ -47,7 +47,7 @@ public class ContactUsPage {
     }
 
     public boolean isErrorMassageDisplayed() {
-        WebElement errorMassage = null;
+        WebElement errorMassage;
         try {
             errorMassage = driver.findElement(ERROR_MESSAGE);
         } catch (NoSuchElementException ex) {

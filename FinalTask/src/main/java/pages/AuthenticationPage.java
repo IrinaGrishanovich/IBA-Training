@@ -10,7 +10,6 @@ public class AuthenticationPage {
     private static final By CREATE_AN_ACCOUNT_BUTTON = get("AuthenticationPage.CreateAnAccountButton");
     private static final By EMAIL_ADDRESS_INPUT = get("AuthenticationPage.CreateEmailAddress");
 
-
     private final WebDriver driver;
 
     public AuthenticationPage(WebDriver driver) {

@@ -1,0 +1,4 @@
+tests/SearchTest.class
+tests/CartTest.class
+tests/ContactUsFormTest.class
+tests/RegisterTest.class

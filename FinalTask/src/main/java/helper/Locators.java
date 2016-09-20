@@ -1,14 +1,13 @@
 package helper;
 
 import org.openqa.selenium.By;
-
 import java.util.Properties;
 
 public class Locators {
     private static final Properties locators;
 
     private enum LocatorType{
-        id, name, css, xpath, tag, text, partText;
+        id, name, css, xpath, tag, text, partText
     }
 
     static {
